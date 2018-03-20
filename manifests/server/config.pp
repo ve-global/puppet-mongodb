@@ -211,7 +211,7 @@ class mongodb::server::config {
 
     file { $dbpath:
       ensure   => directory,
-      mode     => '0755',
+      mode     => '0600',
       owner    => $user,
       group    => $group,
       recurse  => true,
