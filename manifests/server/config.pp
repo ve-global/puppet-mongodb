@@ -214,7 +214,7 @@ class mongodb::server::config {
       mode     => '0755',
       owner    => $user,
       group    => $group,
-      recurse  => true,
+      recurse  => false,
       purge    => false,
       checksum => 'none',
       require  => File[$config],
